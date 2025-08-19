@@ -1,0 +1,12 @@
+.image_textarea{
+    height: 20vh;
+    width:30vw;
+    background-color:gray;
+    color:white;
+}
+.text_submission{
+    height:20vh;
+    width:20vh;
+    background-color: black;
+    color:white;
+}

@@ -1,0 +1,49 @@
+.tool_container {
+    width: 100%;
+    height: auto;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.tool_container > div {
+    border: 0.5px solid #e5e5e5;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.emoji-img {
+    height: .1rem;
+    width: auto;
+    vertical-align: middle;
+  }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .tool_container {
+        justify-content: center;
+        gap: 4px;
+    }
+    
+    .tool_container > div {
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool_container {
+        padding: 5px;
+    }
+    
+    .tool_container > div {
+        padding: 3px;
+    }
+}
