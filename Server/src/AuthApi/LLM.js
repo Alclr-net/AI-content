@@ -1,9 +1,10 @@
 import axios from "axios";
+import dotenv from 'dotenv';
 import { readPrompt } from "../../utils/loadPrompts.js";
 const API_URL = axios.create({
     baseURL:"https://openrouter.ai/api/v1/chat/completions",
       headers: {
-    Authorization: 'Bearer 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',
+    Authorization:`Bearer ${import.meta.env.HF1_TOKEN}`,
     'Content-Type': 'application/json',
   },
 })
